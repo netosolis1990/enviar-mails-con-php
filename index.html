@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mails</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		html { height: 100% }
+		body { height: 100%; margin: 0px; padding: 0px;}
+		.container-fluid{
+			margin: 0px; padding: 0px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<section class="container">
+			<div class="container-page">				
+			<div class="col-md-8">
+					<h3 align="center">Envia Mails</h3>
+					<form role="form" id="form_email">
+					<div class="form-group col-lg-12">
+						<label>Tu Nombre</label>
+						<input type="text" name="nombre" class="form-control" id="" value="">
+					</div>
+
+					<div class="form-group col-lg-12">
+						<label>Email a donde enviar</label>
+						<input type="email" name="email" class="form-control" id="" value="">
+					</div>
+
+					<div class="form-group col-lg-12">
+						<label>Asunto</label>
+						<input type="text" name="asunto" class="form-control" id="" value="">
+					</div>
+					
+
+ 					<div class="form-group col-lg-12">
+ 					    <label>Mensaje</label>
+						<textarea name="msg" id="" cols="30" rows="10" class="form-control"></textarea>
+					</div>
+					<input type="hidden" name="enviar_mail">
+					<button type="submit"  class="btn col-lg-12 btn-warning">Enviar Mail</button>
+					</form>
+
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrapValidator.min.js"></script>
+	<script src="js/noty.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

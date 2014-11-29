@@ -7,14 +7,16 @@ header('Content-type: application/json');
 require 'Mailer/PHPMailerAutoload.php';
 
 if(isset($_POST['enviar_mail'])){
+	/*SI TENEMOS UN SERVIDOR STMP AQUI PONEMOS LOS DATOS
 	$mail = new PHPMailer;
-    $mail->isSMTP();                                      // Activamos SMTP para mailer
-	$mail->Host = 'single-2020.banahosting.com';  // Especificamos el host del servidor SMTP
+        $mail->isSMTP();                                      // Activamos SMTP para mailer
+	$mail->Host = '';  // Especificamos el host del servidor SMTP
 	$mail->SMTPAuth = true;                               // Activamos la autenticacion
-	$mail->Username = 'app@taxirapidoapp.com';                 // Correo SMTP
-	$mail->Password = 'zxcasdqwe123';                           // Contraseña SMTP
+	$mail->Username = '';                 // Correo SMTP
+	$mail->Password = '';                           // Contraseña SMTP
 	$mail->SMTPSecure = 'ssl';                            // Activamos la encriptacion ssl
 	$mail->Port = 465;                                    // Seleccionamos el puerto del SMTP
+	*/
 
 	$mail->From = 'app@prueba.com';
 	$mail->FromName = $_POST['nombre'];   // Nombre del que envia el correo
